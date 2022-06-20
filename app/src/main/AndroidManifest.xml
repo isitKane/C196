@@ -17,29 +17,29 @@
             android:name=".UI.AddCourses"
             android:exported="false"
             android:label="Add Courses"
-            android:parentActivityName=".UI.Courses" />
+            android:parentActivityName=".UI.CoursesList" />
         <activity
             android:name=".UI.AddAssessments"
             android:exported="false"
             android:label="Add Assessments"
-            android:parentActivityName=".UI.Assessments" />
+            android:parentActivityName=".UI.AssessmentsList" />
         <activity
             android:name=".UI.AddTerms"
             android:exported="false"
             android:label="Add Terms"
-            android:parentActivityName=".UI.Terms" />
+            android:parentActivityName=".UI.TermsList" />
         <activity
-            android:name=".UI.Assessments"
+            android:name=".UI.AssessmentsList"
             android:exported="false"
             android:label="View Assessments"
             android:parentActivityName=".UI.MainActivity" />
         <activity
-            android:name=".UI.Courses"
+            android:name=".UI.CoursesList"
             android:exported="false"
             android:label="View Courses"
             android:parentActivityName=".UI.MainActivity" />
         <activity
-            android:name=".UI.Terms"
+            android:name=".UI.TermsList"
             android:exported="false"
             android:label="View Terms"
             android:parentActivityName=".UI.MainActivity" />

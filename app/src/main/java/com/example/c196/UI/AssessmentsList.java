@@ -10,17 +10,17 @@ import android.view.View;
 
 import com.example.c196.R;
 
-public class Courses extends AppCompatActivity {
+public class AssessmentsList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_courses);
+        setContentView(R.layout.activity_assessments);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_courses, menu);
+        getMenuInflater().inflate(R.menu.menu_assessments, menu);
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem item){
@@ -32,8 +32,8 @@ public class Courses extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void addCourses(View view) {
-        Intent intent=new Intent(Courses.this, AddCourses.class);
+    public void addAssessments(View view) {
+        Intent intent=new Intent(AssessmentsList.this, AddAssessments.class);
         startActivity(intent);
     }
 }

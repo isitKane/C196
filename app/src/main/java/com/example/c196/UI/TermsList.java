@@ -10,17 +10,17 @@ import android.view.View;
 
 import com.example.c196.R;
 
-public class Assessments extends AppCompatActivity {
+public class TermsList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assessments);
+        setContentView(R.layout.activity_terms);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_assessments, menu);
+        getMenuInflater().inflate(R.menu.menu_terms, menu);
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem item){
@@ -32,8 +32,8 @@ public class Assessments extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void addAssessments(View view) {
-        Intent intent=new Intent(Assessments.this, AddAssessments.class);
+    public void addTerms(View view) {
+        Intent intent=new Intent(TermsList.this, AddTerms.class);
         startActivity(intent);
     }
 }
