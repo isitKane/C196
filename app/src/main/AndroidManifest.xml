@@ -14,6 +14,21 @@
         android:theme="@style/Theme.C196"
         tools:targetApi="31">
         <activity
+            android:name=".UI.AssessmentsDetailed"
+            android:exported="false"
+            android:label="View Detailed Assessments"
+            android:parentActivityName=".UI.AssessmentsList"/>
+        <activity
+            android:name=".UI.CourseDetailed"
+            android:exported="false"
+            android:label="View Detailed Course"
+            android:parentActivityName=".UI.CoursesList"/>
+        <activity
+            android:name=".UI.AllTerms"
+            android:exported="false"
+            android:label="View All Terms"
+            android:parentActivityName=".UI.TermsList" />
+        <activity
             android:name=".UI.AddCourses"
             android:exported="false"
             android:label="Add Courses"

@@ -16,18 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void buttonTerms(View view) {
+    public void enterButton(View view) {
         Intent intent=new Intent(MainActivity.this, TermsList.class);
-        startActivity(intent);
-    }
-
-    public void buttonCourses(View view) {
-        Intent intent=new Intent(MainActivity.this, CoursesList.class);
-        startActivity(intent);
-    }
-
-    public void buttonAssessments(View view) {
-        Intent intent=new Intent(MainActivity.this, AssessmentsList.class);
         startActivity(intent);
     }
 }

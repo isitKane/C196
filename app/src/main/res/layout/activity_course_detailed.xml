@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CourseDetailed">
+
+    <RadioGroup
+        android:id="@+id/notificationRB"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="276dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/asssessmentBtn"
+        app:layout_constraintStart_toEndOf="@+id/notificationTXT"
+        app:layout_constraintTop_toBottomOf="@+id/statusRB">
+
+        <RadioButton
+            android:id="@+id/yesNRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/noNRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/courseTitleTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textview"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/startTXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="321dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/endTXT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitleTXT" />
+
+    <TextView
+        android:id="@+id/endTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="321dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/mentorNameTXT3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTXT" />
+
+    <RadioGroup
+        android:id="@+id/statusRB"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/notificationRB"
+        app:layout_constraintStart_toEndOf="@+id/statusTXT"
+        app:layout_constraintTop_toBottomOf="@+id/courseTitleTXT">
+
+        <RadioButton
+            android:id="@+id/yesRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/noRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/mentorNameTXT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="321dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/mentorPhoneTXT3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTXT" />
+
+    <TextView
+        android:id="@+id/mentorPhoneTXT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="321dp"
+        android:text="@string/textview"
+        app:layout_constraintBottom_toTopOf="@+id/mentorEmailTXT3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentorNameTXT3" />
+
+    <TextView
+        android:id="@+id/mentorEmailTXT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="321dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentorPhoneTXT3" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="370dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/courseNotesBTN"
+        app:layout_constraintRight_toRightOf="@+id/asssessmentBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mentorEmailTXT3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/editCourseBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="#003057"
+        android:text="Edit Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseNotesBTN" />
+
+    <Button
+        android:id="@+id/courseNotesBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="635dp"
+        android:backgroundTint="#003057"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/editCourseBtn"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="View Course Notes" />
+
+    <Button
+        android:id="@+id/asssessmentBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="635dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#003057"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="View Assessments"
+        app:layout_constraintBottom_toTopOf="@+id/editCourseBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/deleteCourseBTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#003057"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Delete Course"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/asssessmentBtn" />
+
+    <TextView
+        android:id="@+id/statusTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/status_switch"
+        app:layout_constraintBottom_toTopOf="@+id/notificationTXT"
+        app:layout_constraintEnd_toStartOf="@+id/statusRB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mentorEmailTXT3" />
+
+    <TextView
+        android:id="@+id/notificationTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="61dp"
+        android:text="@string/course_notification_switch"
+        app:layout_constraintEnd_toStartOf="@+id/notificationRB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusTXT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,10 +9,14 @@ public class Terms {
 
     private int termID;
     private String termName;
+    private String termStart;
+    private String termEnd;
 
-    public Terms(int termID, String termName) {
+    public Terms(int termID, String termName, String termStart, String termEnd) {
         this.termID = termID;
         this.termName = termName;
+        this.termStart = termStart;
+        this.termEnd = termEnd;
     }
 
     public int getTermID() {
@@ -29,5 +33,21 @@ public class Terms {
 
     public void setTermName(String termName) {
         this.termName = termName;
+    }
+
+    public String getTermStart() {
+        return termStart;
+    }
+
+    public void setTermStart(String termStart) {
+        this.termStart = termStart;
+    }
+
+    public String getTermEnd() {
+        return termEnd;
+    }
+
+    public void setTermEnd(String termEnd) {
+        this.termEnd = termEnd;
     }
 }
