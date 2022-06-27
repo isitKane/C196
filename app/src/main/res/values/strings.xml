@@ -32,6 +32,7 @@
     <string name="delete_ass">Delete Assessment</string>
     <string name="ass_startdate">Assessment Start Date</string>
     <string name="add_course">Add Course</string>
+    <string name="add_term">Add Term</string>
 
 
 </resources>

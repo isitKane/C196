@@ -138,12 +138,13 @@
         android:id="@+id/divider"
         android:layout_width="1dp"
         android:layout_height="0dp"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="287dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="@+id/courseNotesBTN"
         app:layout_constraintRight_toRightOf="@+id/asssessmentBtn"
-        app:layout_constraintTop_toBottomOf="@+id/mentorEmailTXT3"
+        app:layout_constraintTop_toBottomOf="@+id/notificationRB"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button

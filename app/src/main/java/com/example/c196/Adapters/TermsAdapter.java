@@ -29,13 +29,10 @@ public class TermsAdapter extends RecyclerView.Adapter<TermsAdapter.TermsViewHol
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    int position=getAdapterPosition();
+                    int position = getAdapterPosition();
                     final Terms current = mTerms.get(position);
                     Intent intent = new Intent(context, CoursesList.class);
-                    intent.putExtra("id", current.getTermID());
-                    intent.putExtra("name",current.getTermName());
-                    intent.putExtra("start",current.getTermStart());
-                    intent.putExtra("end",current.getTermEnd());
+                    intent.putExtra("termID", current.getTermID());
                     context.startActivity(intent);
                 }
             });
@@ -47,7 +44,7 @@ public class TermsAdapter extends RecyclerView.Adapter<TermsAdapter.TermsViewHol
 
     public TermsAdapter(Context context) {
         mInflater = LayoutInflater.from(context);
-        this.context=context;
+        this.context = context;
     }
     @NonNull
     @Override

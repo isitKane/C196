@@ -53,7 +53,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/assTypeTxt"
+            android:id="@+id/itemListStartTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/textview"
@@ -63,7 +63,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/assTxt"
+        android:id="@+id/itemListNameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textview"

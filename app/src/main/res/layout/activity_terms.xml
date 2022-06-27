@@ -1,146 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".UI.TermsList">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".UI.TermsList"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="wrap_content"
+        tools:context=".UI.TermsList">
 
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:background="?android:attr/listDivider"
-            app:layout_constraintBottom_toTopOf="@+id/editTermBtn"
-            app:layout_constraintLeft_toLeftOf="@+id/viewCourseBtn"
-            app:layout_constraintRight_toRightOf="@+id/addCourseBtn"
-            app:layout_constraintTop_toBottomOf="@+id/termRecyclerView" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/termRecyclerView"
-            android:layout_width="409dp"
-            android:layout_height="635dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="1dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="412dp"
+            android:layout_height="731dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/terms_list_item" />
+            tools:context=".UI.TermsList">
 
-        <Button
-            android:id="@+id/viewCourseBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="3dp"
-            android:layout_marginEnd="2dp"
-            android:backgroundTint="#003057"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="viewCourse"
-            android:text="View Courses"
-            app:layout_constraintBottom_toBottomOf="@+id/divider2"
-            app:layout_constraintEnd_toStartOf="@+id/divider2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/termRecyclerView"
-            app:layout_constraintVertical_bias="1.0" />
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="45dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toTopOf="@+id/editTermBtn"
+                app:layout_constraintLeft_toLeftOf="@+id/viewCourseBtn"
+                app:layout_constraintRight_toRightOf="@+id/addCourseBtn" />
 
-        <Button
-            android:id="@+id/addCourseBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
-            android:backgroundTint="#003057"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="addCourse"
-            android:text="@string/add_course"
-            app:layout_constraintBottom_toBottomOf="@+id/divider2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/divider2"
-            app:layout_constraintTop_toTopOf="@+id/termRecyclerView"
-            app:layout_constraintVertical_bias="1.0" />
+            <Button
+                android:id="@+id/viewCourseBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="#003057"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="viewCourse"
+                android:text="View Courses"
+                app:layout_constraintBottom_toBottomOf="@+id/divider2"
+                app:layout_constraintEnd_toStartOf="@+id/divider2"
+                app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
-            android:id="@+id/editTermBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:backgroundTint="#003057"
-            android:clickable="true"
-            android:focusable="true"
-            android:text="Edit Term"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/divider4"
-            app:layout_constraintStart_toEndOf="@+id/divider3"
-            app:layout_constraintTop_toBottomOf="@+id/viewCourseBtn"
-            app:layout_constraintVertical_bias="1.0" />
+            <Button
+                android:id="@+id/addCourseBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="#003057"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="addTerms"
+                android:text="@string/add_term"
+                app:layout_constraintBottom_toBottomOf="@+id/divider2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/divider2" />
 
-        <Button
-            android:id="@+id/deleteTermBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:backgroundTint="#003057"
-            android:clickable="true"
-            android:focusable="true"
-            android:text="Delete Term"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/divider4"
-            app:layout_constraintTop_toBottomOf="@+id/viewCourseBtn"
-            app:layout_constraintVertical_bias="1.0"/>
+            <Button
+                android:id="@+id/editTermBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#003057"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Edit Term"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/divider4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewCourseBtn" />
 
-        <Button
-            android:id="@+id/addTermBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:backgroundTint="#003057"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="addTerms"
-            android:text="Add Term"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/divider3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/viewCourseBtn"
-            app:layout_constraintVertical_bias="1.0" />
+            <Button
+                android:id="@+id/deleteTermBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#003057"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Delete Term"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/divider4"
+                app:layout_constraintTop_toBottomOf="@+id/viewCourseBtn"
+                app:layout_constraintVertical_bias="0.0" />
 
-        <View
-            android:id="@+id/divider3"
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:background="?android:attr/listDivider"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="@+id/addTermBtn"
-            app:layout_constraintRight_toRightOf="@+id/editTermBtn"
-            app:layout_constraintTop_toBottomOf="@+id/viewCourseBtn" />
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="7dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/deleteTermBtn"
+                app:layout_constraintStart_toEndOf="@+id/editTermBtn"
+                app:layout_constraintTop_toTopOf="@+id/deleteTermBtn"
+                app:layout_constraintVertical_bias="0.0" />
 
-        <View
-            android:id="@+id/divider4"
-            android:layout_width="1dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="7dp"
-            android:background="?android:attr/listDivider"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="@+id/editTermBtn"
-            app:layout_constraintRight_toRightOf="@+id/deleteTermBtn"
-            app:layout_constraintTop_toTopOf="@+id/deleteTermBtn" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/termRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/viewCourseBtn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/terms_list_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
