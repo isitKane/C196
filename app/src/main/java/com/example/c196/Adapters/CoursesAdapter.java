@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.c196.Entity.Courses;
 import com.example.c196.R;
-import com.example.c196.UI.CourseDetailed;
+import com.example.c196.UI.CoursesList;
 
 import java.util.List;
 
@@ -23,16 +23,18 @@ public class CoursesAdapter extends RecyclerView.Adapter<CoursesAdapter.CoursesV
         private final TextView courseEndItemView;
         private CoursesViewHolder(View itemView){
             super(itemView);
-            courseNameItemView = itemView.findViewById(R.id.itemListNameTxt);
-            courseStartItemView = itemView.findViewById(R.id.itemListStartTxt);
-            courseEndItemView = itemView.findViewById(R.id.itemListEndTxt);
+            courseNameItemView = itemView.findViewById(R.id.tcItemListNameTxt);
+            courseStartItemView = itemView.findViewById(R.id.tcItemListStarttTxt);
+            courseEndItemView = itemView.findViewById(R.id.tcItemListEndTxt);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     int position = getAdapterPosition();
                     final Courses current = mCourses.get(position);
-                    Intent intent = new Intent(context, CourseDetailed.class);
+                    Intent intent = new Intent(context, CoursesList.class);
                     intent.putExtra("courseID", current.getCourseID());
+                    intent.putExtra("courseTermID", current.getCourseTermID());
+                    intent.putExtra("termID", current.getCourseTermID());
                     context.startActivity(intent);
                 }
             });

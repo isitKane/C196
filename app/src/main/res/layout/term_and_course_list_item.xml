@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_margin="1dp"
     android:layout_marginStart="32dp"
     android:layout_marginEnd="32dp"
     app:cardBackgroundColor="#003057">
@@ -11,7 +11,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="18dp"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         app:cardBackgroundColor="#003057">
@@ -19,13 +19,13 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="18dp"
             android:layout_marginStart="0dp"
             android:layout_marginEnd="0dp"
             app:cardBackgroundColor="#003057">
 
             <TextView
-                android:id="@+id/itemListEndTxt"
+                android:id="@+id/tcItemListEndTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/textview"
@@ -35,7 +35,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/itemListStartTxt"
+            android:id="@+id/tcItemListStarttTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/textview"
@@ -45,11 +45,11 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/itemListNameTxt"
+        android:id="@+id/tcItemListNameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textview"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textSize="14sp" />
 
 </androidx.cardview.widget.CardView>

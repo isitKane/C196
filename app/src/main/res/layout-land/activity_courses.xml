@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/addAssBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cdCourseNotesTXT">
+        app:layout_constraintTop_toBottomOf="@+id/cdMentorPhoneTXT">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,18 +98,18 @@
         android:id="@+id/cdMentorEmailTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="397dp"
         android:text="@string/textview"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cdMentorPhoneTXT" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdCourseNameTXT" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="1dp"
         android:layout_height="40dp"
         android:layout_marginTop="687dp"
-        android:layout_marginRight="204dp"
+        android:layout_marginRight="420dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -143,9 +143,10 @@
         android:text="Delete Course"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/addAssBtn"
-        app:layout_constraintVertical_bias="1.0"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/addAssBtn"
@@ -168,22 +169,20 @@
         android:id="@+id/cdCourseNotesTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="397dp"
         android:text="@string/textview"
-        app:layout_constraintBottom_toTopOf="@+id/assScrollView"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cdStatusTXT" />
 
     <TextView
         android:id="@+id/cdStatusTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="397dp"
         android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cdMentorEmailTXT" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

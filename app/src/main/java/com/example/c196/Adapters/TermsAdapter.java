@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.c196.Entity.Terms;
 import com.example.c196.R;
-import com.example.c196.UI.CoursesList;
+import com.example.c196.UI.TermsList;
 
 import java.util.List;
 
@@ -23,15 +23,15 @@ public class TermsAdapter extends RecyclerView.Adapter<TermsAdapter.TermsViewHol
         private final TextView termEndItemView;
         private TermsViewHolder(View itemView){
             super(itemView);
-            termNameItemView = itemView.findViewById(R.id.termNameTXT);
-            termStartItemView = itemView.findViewById(R.id.termStartTXT);
-            termEndItemView = itemView.findViewById(R.id.termEndTXT);
+            termNameItemView = itemView.findViewById(R.id.tcItemListNameTxt);
+            termStartItemView = itemView.findViewById(R.id.tcItemListStarttTxt);
+            termEndItemView = itemView.findViewById(R.id.tcItemListEndTxt);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     int position = getAdapterPosition();
                     final Terms current = mTerms.get(position);
-                    Intent intent = new Intent(context, CoursesList.class);
+                    Intent intent = new Intent(context, TermsList.class);
                     intent.putExtra("termID", current.getTermID());
                     context.startActivity(intent);
                 }
@@ -49,7 +49,7 @@ public class TermsAdapter extends RecyclerView.Adapter<TermsAdapter.TermsViewHol
     @NonNull
     @Override
     public TermsAdapter.TermsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = mInflater.inflate(R.layout.terms_list_item,parent,false);
+        View itemView = mInflater.inflate(R.layout.term_and_course_list_item,parent,false);
         return new TermsViewHolder(itemView);
     }
 

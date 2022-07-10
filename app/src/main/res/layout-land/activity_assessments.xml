@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.AssessmentsDetailed">
+    tools:context=".UI.AssessmentsList">
 
     <View
         android:id="@+id/divider7"
@@ -14,76 +14,44 @@
         android:layout_marginBottom="4dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/deleteAssBtn"
-        app:layout_constraintStart_toEndOf="@+id/editAssBtn"
+        app:layout_constraintEnd_toStartOf="@+id/adDeleteAssBtn"
+        app:layout_constraintStart_toEndOf="@+id/adEditAssBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/editAssBtn"
+        android:id="@+id/adEditAssBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="410dp"
         android:layout_marginBottom="4dp"
         android:backgroundTint="#003057"
+        android:onClick="editAssessments"
         android:text="@string/edit_ass"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/divider7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notificationRB" />
+        app:layout_constraintTop_toBottomOf="@+id/adAssDescText"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/deleteAssBtn"
+        android:id="@+id/adDeleteAssBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="410dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="4dp"
         android:backgroundTint="#003057"
+        android:onClick="deleteAssessments"
         android:text="@string/delete_ass"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/divider7"
-        app:layout_constraintTop_toBottomOf="@+id/notificationRB"
+        app:layout_constraintTop_toBottomOf="@+id/adAssDescText"
         app:layout_constraintVertical_bias="1.0" />
 
-    <RadioGroup
-        android:id="@+id/notificationRB"
-        android:layout_width="112dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginTop="158dp"
-        android:layout_marginEnd="150dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/detailedAssNotiTxt"
-        app:layout_constraintTop_toBottomOf="@+id/assTitleTxt">
-
-        <RadioButton
-            android:id="@+id/yesNRB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/yes" />
-
-        <RadioButton
-            android:id="@+id/noNRB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/no" />
-    </RadioGroup>
-
     <TextView
-        android:id="@+id/detailedAssNotiTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/course_notification_switch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailedAssDescText" />
-
-    <TextView
-        android:id="@+id/assTitleTxt"
+        android:id="@+id/adAssTitleTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
@@ -96,42 +64,42 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/detailedAssTypeTxt"
+        android:id="@+id/adAssTypeTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/textview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/assTitleTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/adAssTitleTxt" />
 
     <TextView
-        android:id="@+id/detailedAssStartDateTxt"
+        android:id="@+id/adAssStartDateTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/textview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailedAssTypeTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/adAssTypeTxt" />
 
     <TextView
-        android:id="@+id/detailedAssEndDateTxt"
+        android:id="@+id/adAssEndDateTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/textview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailedAssStartDateTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/adAssStartDateTxt" />
 
     <TextView
-        android:id="@+id/detailedAssDescText"
+        android:id="@+id/adAssDescText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="@string/textview"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailedAssEndDateTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/adAssEndDateTxt" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -64,30 +64,36 @@
         android:id="@+id/addCourseMentorPhoneTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="27dp"
         android:text="@string/mentor_phone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addCourseMentorNameTXT" />
+        app:layout_constraintEnd_toStartOf="@+id/addCourseMentorPhoneTF"
+        app:layout_constraintStart_toEndOf="@+id/addCourseNameTF"
+        app:layout_constraintTop_toBottomOf="@+id/addCourseTXT" />
 
     <TextView
         android:id="@+id/addCourseMentorEmailTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/mentor_email"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addCourseMentorEmailTF"
+        app:layout_constraintStart_toEndOf="@+id/addCourseStartTF"
         app:layout_constraintTop_toBottomOf="@+id/addCourseMentorPhoneTXT" />
 
     <TextView
         android:id="@+id/addCourseNotesTXT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="29dp"
         android:text="@string/course_notes"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addCourseNotesTF"
+        app:layout_constraintStart_toEndOf="@+id/addCourseEndTF"
         app:layout_constraintTop_toBottomOf="@+id/addCourseMentorEmailTXT" />
 
     <Button
@@ -96,99 +102,93 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="#003057"
         android:onClick="submitCourseButton"
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/addCourseNameTF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addCourseTXT"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="150dp" />
 
     <EditText
         android:id="@+id/addCourseStartTF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addCourseNameTF"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="150dp" />
 
     <EditText
         android:id="@+id/addCourseEndTF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp"
         android:layout_marginBottom="4dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/addCourseStatusSpinner"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addCourseStartTF"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="150dp" />
 
     <EditText
         android:id="@+id/addCourseMentorNameTF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/addCourseMentorPhoneTF"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addCourseStatusSpinner"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="150dp" />
 
     <EditText
         android:id="@+id/addCourseMentorPhoneTF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="23dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/addCourseMentorEmailTF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addCourseMentorNameTF"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/addCourseMentorEmailTF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="23dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/addCourseNotesTF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addCourseMentorPhoneTF"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -197,8 +197,8 @@
         android:id="@+id/addCourseNotesTF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="23dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
@@ -221,10 +221,9 @@
         android:id="@+id/addCourseStatusSpinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/addCourseMentorNameTF"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="370dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/addCourseEndTF" />

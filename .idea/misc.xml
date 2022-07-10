@@ -5,11 +5,18 @@
       <map>
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.492" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/drawable/ic_baseline_add_white.xml" value="0.492" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_add_assessments.xml" value="0.4691358024691358" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_add_courses.xml" value="0.4691358024691358" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_add_terms.xml" value="0.4691358024691358" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_all_terms.xml" value="0.4691358024691358" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_assessments.xml" value="0.4691358024691358" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_courses.xml" value="0.4691358024691358" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_main.xml" value="0.4691358024691358" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout-land/activity_terms.xml" value="0.4691358024691358" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_add_assessments.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_add_courses.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_add_terms.xml" value="0.5541666666666667" />
-        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_all_terms.xml" value="0.5401041666666667" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_all_terms.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_assessments.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_assessments_detailed.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_course_detailed.xml" value="0.5541666666666667" />
@@ -18,12 +25,19 @@
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_terms.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/activity_terms_detailed.xml" value="0.5401041666666667" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/asdada.xml" value="0.553125" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/assessment_list_item.xml" value="0.553125" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/list_item.xml" value="0.553125" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/term_and_course_list_item.xml" value="0.553125" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/terms_list_item.xml" value="0.553125" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/testt.xml" value="0.553125" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/layout/tetata.xml" value="0.553125" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/add_courses.xml" value="0.553125" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/courses_detail.xml" value="0.553125" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/menu_addcourses.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/menu_assessments.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/menu_courses.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/menu_courses_detail.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/menu_terms.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/theso/AndroidStudioProjects/C196/app/src/main/res/menu/menu_values.xml" value="0.553125" />
       </map>

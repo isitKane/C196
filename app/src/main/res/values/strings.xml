@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">C196</string>
+    <string-array name="course_status">
+        <item>Planned To Take</item>
+        <item>In-Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+    </string-array>
 
+    <string-array name="assType">
+        <item>Pre-Assessment</item>
+        <item>Objective Assessment</item>
+        <item>Performance Assessment</item>
+    </string-array>
 
     <!-- TODO: Remove  or change this palceholder text -->
     <string name="textview">TextView</string>
@@ -33,6 +44,13 @@
     <string name="ass_startdate">Assessment Start Date</string>
     <string name="add_course">Add Course</string>
     <string name="add_term">Add Term</string>
+    <string name="status">Status</string>
+    <string name="set_notis_On">Set Notifications On</string>
+    <string name="shareNotes">Share Notes</string>
+    <string name="alert_start">Set Start Date Alert</string>
+    <string name="alert_end">Set End Date Alert</string>
+    <string name="channel_name">myChannel</string>
+    <string name="channel_description">myChannelDescription</string>
 
 
 </resources>
